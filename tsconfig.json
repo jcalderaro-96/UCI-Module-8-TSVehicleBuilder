@@ -1,12 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES6",                     // compile to ES6 JavaScript for compatibility
-    "module": "commonjs",                // use CommonJS modules for Node.js
-    "rootDir": "./src",                  // source code is in src folder
-    "outDir": "./dist",                  // compiled JavaScript files go to dist folder
-    "strict": true,                     // enable all strict type-checking options
-    "esModuleInterop": true,            // allow default imports from CommonJS modules
-    "skipLibCheck": true                // skip type checking of all declaration files (*.d.ts)
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src/**/*"]                // include all files in src folder and subfolders
+  "include": [
+    "src/**/*.ts"
+  ]
 }

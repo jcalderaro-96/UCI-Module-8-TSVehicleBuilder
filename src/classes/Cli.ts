@@ -63,7 +63,7 @@ class Cli {
     }
 
     this.vehicles.push(newVehicle); // Add new vehicle to the vehicles array
-    console.log(`Created new ${vehicleType}: ${newVehicle.vin}`);
+console.log(`Created new ${vehicleType}: ${(newVehicle as Car).vin}`);
 
     // Recurse to allow for additional actions
     await this.start();
@@ -122,7 +122,8 @@ class Cli {
         type: 'list',
         name: 'vehicle',
         message: 'Select an existing vehicle:',
-        choices: this.vehicles.map(v => `${v.constructor.name} - ${v.vin}`), // Display vehicles by type and VIN
+choices: this.vehicles.map(v => `${v.constructor.name} - ${(v as Car).vin}`),
+
       },
     ]);
 

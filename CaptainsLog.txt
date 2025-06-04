@@ -1,0 +1,46 @@
+Deliverables: 20%
+🟢 Your GitHub repository containing your application code.
+
+🔴 A walkthrough video that demonstrates the functionality of the Vehicle Builder.
+
+Walkthrough Video: 27%
+🔴 The README.md file must include a link to the walkthrough video.
+
+🔴 The walkthrough video must demonstrate how a user would invoke the application from the command line.
+
+🔴 The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
+
+🔴 The walkthrough video must demonstrate all the prompts and functionality related to trucks and motorbikes working properly.
+
+Technical Acceptance Criteria: 40%
+🟢 Application uses the Inquirer package.
+
+🟢 The application has properly implemented Truck and Motorbike classes.
+
+🟢 The user should be able to choose between a car, a truck, or a motorbike when creating a vehicle.
+
+🟢 The Truck and Motorbike classes must prompt the user for details that the Car class doesn't.
+
+🟢 The Truck class must allow the user to implement an action that the Car and Motorbike classes cannot.
+
+Repository Quality: 13%
+🟢 Repository has a unique name.
+
+🟢 Repository follows best practices for file structure and naming conventions.
+
+🟢 Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+
+🟢 Repository contains multiple descriptive commit messages.
+
+🔴 Repository contains a high-quality README with description and a link to walkthrough video.
+
+Summary
+You are required to submit the following for review:
+
+🔴 A walkthrough video demonstrating the functionality of the application.
+
+🟢 A sample README.md file for a project repository generated using your application.
+
+🟢 The URL of the GitHub repository.
+
+🟢 Give the repository a unique name and include a README describing the project.

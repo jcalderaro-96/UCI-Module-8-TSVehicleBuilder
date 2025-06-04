@@ -16,7 +16,7 @@ class Motorbike extends Vehicle {
   wheels: Wheel[]; // wheels array
 
   constructor(
-    vin: string,
+    vin: string, // Add vin as a constructor parameter
     color: string,
     make: string,
     model: string,
@@ -25,7 +25,7 @@ class Motorbike extends Vehicle {
     topSpeed: number,
     wheels: Wheel[]
   ) {
-    super(); // call Vehicle constructor
+    super(vin); // pass vin to the Vehicle constructor
 
     // initialize properties
     this.vin = vin;

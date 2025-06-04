@@ -21,7 +21,7 @@ class Truck extends Vehicle implements AbleToTow {
 
   // constructor initializes all properties
   constructor(
-    vin: string,
+    vin: string, // Add vin as a parameter
     color: string,
     make: string,
     model: string,
@@ -31,7 +31,7 @@ class Truck extends Vehicle implements AbleToTow {
     wheels: Wheel[],
     towingCapacity: number
   ) {
-    super(); // call Vehicle constructor
+    super(vin); // pass vin to the Vehicle constructor
     this.vin = vin; // assign vin
     this.color = color; // assign color
     this.make = make; // assign make

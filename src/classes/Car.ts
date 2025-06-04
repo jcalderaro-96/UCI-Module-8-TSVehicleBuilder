@@ -13,7 +13,7 @@ class Car extends Vehicle {
   wheels: Wheel[]; // array of wheels (should be 4)
 
   constructor(
-    vin: string,
+    vin: string, // the VIN is now passed into the constructor
     color: string,
     make: string,
     model: string,
@@ -22,7 +22,7 @@ class Car extends Vehicle {
     topSpeed: number,
     wheels: Wheel[]
   ) {
-    super(); // initialize Vehicle properties (started, currentSpeed)
+    super(vin); // pass vin to the base Vehicle constructor
     this.vin = vin; // assign vin
     this.color = color; // assign color
     this.make = make; // assign make
