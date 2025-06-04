@@ -87,4 +87,4 @@ For questions, please contact me via GitHub: [JCalderaro-96](https://github.com/
 Or email me at: SampleEmail
 
 ## Code Sources
-All code was written through consultation and collaboration with Chatgpt.com
+This project was developed through collaboration with ChatGPT.com for some implementation guidance. Additionally, parts of the base code were inspired by and adapted from ThayRibeiro0's GitHub repository [https://github.com/ThayRibeiro0]. Their contributions and insights helped me overcome certain challenges and significantly improved the development process.
