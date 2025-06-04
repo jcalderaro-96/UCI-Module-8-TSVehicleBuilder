@@ -1,20 +1,17 @@
-// Importing Vehicle and Wheel classes
-import Vehicle from './Vehicle.js';
-import Wheel from './Wheel.js';
+// updated Car.ts with green comments and get accessor fix
+import Vehicle from './Vehicle.js'; // import base Vehicle class
+import Wheel from './Wheel.js'; // import Wheel class
 
-// Car class that extends Vehicle class
 class Car extends Vehicle {
-  // Declare properties of the Car class
-  vin: string;
-  color: string;
-  make: string;
-  model: string;
-  year: number;
-  weight: number;
-  topSpeed: number;
-  wheels: Wheel[];
+  vin: string; // unique vehicle identifier
+  color: string; // car color
+  make: string; // manufacturer
+  model: string; // model name
+  year: number; // manufacturing year
+  weight: number; // weight in pounds
+  topSpeed: number; // max speed in mph
+  wheels: Wheel[]; // array of wheels (should be 4)
 
-  // Constructor for the Car class
   constructor(
     vin: string,
     color: string,
@@ -25,33 +22,28 @@ class Car extends Vehicle {
     topSpeed: number,
     wheels: Wheel[]
   ) {
-    // Call the constructor of the parent class, Vehicle
-    super();
+    super(); // initialize Vehicle properties (started, currentSpeed)
+    this.vin = vin; // assign vin
+    this.color = color; // assign color
+    this.make = make; // assign make
+    this.model = model; // assign model
+    this.year = year; // assign year
+    this.weight = weight; // assign weight
+    this.topSpeed = topSpeed; // assign top speed
 
-    // Initialize properties of the Car class
-    this.vin = vin;
-    this.color = color;
-    this.make = make;
-    this.model = model;
-    this.year = year;
-    this.weight = weight;
-    this.topSpeed = topSpeed;
-    // Check if the wheels array has 4 elements
-    // If not, create 4 new Wheel objects
-    // Otherwise, use the provided wheels array
+    // Validate wheels count: assign default 4 wheels if not 4 provided
     if (wheels.length !== 4) {
-      this.wheels = [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
+      this.wheels = [new Wheel(), new Wheel(), new Wheel(), new Wheel()]; // default wheels
     } else {
-      this.wheels = wheels;
+      this.wheels = wheels; // use provided wheels
     }
   }
 
-  // Override the printDetails method from the Vehicle class
+  // Override Vehicle's printDetails() to add Car-specific info
   override printDetails(): void {
-    // Call the printDetails method of the parent class, Vehicle
-    super.printDetails();
+    super.printDetails(); // print base Vehicle info
 
-    // Print details of the Car class
+    // Print Car-specific properties
     console.log(`VIN: ${this.vin}`);
     console.log(`Color: ${this.color}`);
     console.log(`Make: ${this.make}`);
@@ -60,21 +52,15 @@ class Car extends Vehicle {
     console.log(`Weight: ${this.weight} lbs`);
     console.log(`Top Speed: ${this.topSpeed} mph`);
 
-    // Print details of the wheels
-    console.log(
-      `Wheel 1: ${this.wheels[0].getDiameter} inch with a ${this.wheels[0].getTireBrand} tire`
-    );
-    console.log(
-      `Wheel 2: ${this.wheels[1].getDiameter} inch with a ${this.wheels[1].getTireBrand} tire`
-    );
-    console.log(
-      `Wheel 3: ${this.wheels[2].getDiameter} inch with a ${this.wheels[2].getTireBrand} tire`
-    );
-    console.log(
-      `Wheel 4: ${this.wheels[3].getDiameter} inch with a ${this.wheels[3].getTireBrand} tire`
-    );
+    // Print wheels info using property access (getters)
+    this.wheels.forEach((wheel, index) => {
+      console.log(
+        `Wheel ${index + 1}: ${wheel.getDiameter} inch with a ${wheel.getTireBrand} tire`
+      );
+    });
   }
 }
 
-// Export the Car class as the default export
-export default Car;
+export default Car; // export Car class as default
+
+// end of Car.ts

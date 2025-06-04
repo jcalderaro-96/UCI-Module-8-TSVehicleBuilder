@@ -1,15 +1,17 @@
+// updated full index.ts with green comments
+
 // import classes
-import Truck from "./classes/Truck";
-import Car from "./classes/Car";
-import Motorbike from "./classes/Motorbike";
-import Wheel from "./classes/Wheel";
-import Cli from "./classes/Cli";
+import Truck from "./classes/Truck.js";
+import Car from "./classes/Car.js";
+import Motorbike from "./classes/Motorbike.js";
+import Wheel from "./classes/Wheel.js";
+import Cli from "./classes/Cli.js";
 
 // create an array of vehicles
 const vehicles = [];
 
 // TODO: uncomment once trucks are implemented
-// const truck1 = new Truck(Cli.generateVin(),"red", "Ford", "F-150", 2021, 5000, 120, [], 10000);
+// const truck1 = new Truck(Cli.generateVin(), "red", "Ford", "F-150", 2021, 5000, 120, [], 10000);
 
 // will use default wheels
 const car1 = new Car(
@@ -34,8 +36,10 @@ vehicles.push(car1);
 // TODO: uncomment once motorbikes are implemented
 // vehicles.push(motorbike1);
 
-// create a new instance of the Cli class
+// create a new instance of the Cli class with vehicles array
 const cli = new Cli(vehicles);
 
-// start the cli
-cli.startCli();
+// start the CLI (method is called start, not startCli)
+cli.start();
+
+// end of file
