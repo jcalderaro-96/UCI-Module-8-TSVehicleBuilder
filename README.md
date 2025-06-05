@@ -37,7 +37,7 @@ npm start
 
 ## Walkthrough Video
 
-Link: [blah]
+Link: https://app.screencastify.com/watch/39eWxAInObwZPGdCO8fu
 
 
 ## Usage
