@@ -1,10 +1,14 @@
 // cli.ts
 
 import inquirer from 'inquirer'; // import inquirer for user input
-import Car from './Car'; // import car class
-import Truck from './Truck'; // import truck class
-import Motorbike from './Motorbike'; // import motorbike class
-import Vehicle from './Vehicle'; // import vehicle class
+import Car from './Car.js';       // add .js
+import Truck from './Truck.js';   // add .js
+import Vehicle from './Vehicle.js';  // add .js extension if you are using ES modules and compiled to JS
+
+import Motorbike from './Motorbike.js'; // add .js
+import Wheel from './Wheel.js';   // add .js
+// and any other imports in this file
+
 
 // Define the CLI class
 class Cli {

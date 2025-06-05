@@ -1,11 +1,14 @@
 // updated full index.ts with green comments
 
-// import classes (no need for .ts extension)
-import Truck from "./classes/Truck";  // removed .ts
-import Car from "./classes/Car";      // removed .ts
-import Motorbike from "./classes/Motorbike";  // removed .ts
-import Wheel from "./classes/Wheel";  // removed .ts
-import Cli from "./classes/Cli";      // removed .ts
+// updated index.ts with fixed .js extensions for ESM
+import Truck from "./classes/Truck.js";        // ✅ add .js
+import Car from "./classes/Car.js";            // ✅ add .js
+import Motorbike from "./classes/Motorbike.js"; // ✅ add .js
+import Wheel from "./classes/Wheel.js";        // ✅ add .js
+import Cli from "./classes/Cli.js";            // ✅ add .js
+
+// (rest of your file stays the same)
+
 
 // create an array of vehicles
 const vehicles = [];
